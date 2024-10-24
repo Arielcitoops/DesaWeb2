@@ -5,11 +5,6 @@ function randomico() {
   function obtenernumero() {
     return parseInt(document.getElementById("inp_num").value);
   }
-
-   document.getElementById("btn_enviar").onclick = function(e) {
-    e.preventDefault();
-    envio();
-  }
   function envio() {
     let num = obtenernumero();
     let random = randomico();
