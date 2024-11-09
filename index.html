@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+</head>
+<body>
+    <h1>Hoja de Vida</h1>
+    <h2>Estudiante de Desarollo de SW</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <td>Brandon Arevalo</td>
+        </tr>
+        <tr>
+            <th>Edad</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Correo</th>
+            <td>baarevalo@pucesi.edu.ec</td>
+        </tr>
+    </table>
+
+    <h2>Mis Hobbies</h2>
+    <ul>
+        <li>Jugar Basketball</li>
+        <li>Ver Series</li>
+        <li>Jugar Videojuegos</li>
+    </ul>
+
+    <h2>Imagen</h2>
+    <img src="https://th.bing.com/th/id/OIP.mBTYvmRCC0UN0JPJ7DbtdwHaMh?rs=1&pid=ImgDetMain" width="200">
+
+    <h2>Fecha de Nacimiento</h2>
+    <input type="date" id="fechaNacimientoInput">
+    <button onclick="guardarFecha()">Guardar Fecha</button>
+
+    <h2>Calcular Edad</h2>
+    <button onclick="calcularEdad()">Calcular Edad</button>
+    <p id="edadCalculada"></p>
+
+
+    <h2>Verificación de Cédula Ecuatoriana</h2>
+    <p>Ingrese su número de cédula:</p>
+    <input type="text" id="cedula" placeholder="Ingrese la cédula" />
+    <button onclick="verificarCedula()">Verificar</button>
+    <p id="resultadoCedula"></p>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
